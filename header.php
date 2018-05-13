@@ -65,7 +65,9 @@
                             if ($url == '/') { ?><a href="#five">Kaart</a>
                             <?php } ?></li>
                             <li><a href="project.php">Project</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><?php $url = $_SERVER['REQUEST_URI'];;
+                            if (($url == '/') || ($url =='/project.php')) { ?><a href="#contact">Contact</a>
+                            <?php } ?></li>
 						</ul>
 					</nav>
                 <!-- Icons -->
